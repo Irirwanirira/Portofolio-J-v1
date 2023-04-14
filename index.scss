@@ -1,0 +1,356 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$doc-padding: 143px;
+$nav-color: #fff;
+$text-color: #f55800;
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3e3c3c;
+  width: 100%;
+  height: 70px;
+
+  .logo {
+    padding: $doc-padding;
+
+    .l-a {
+      color: $nav-color;
+      text-decoration: none;
+      font-size: 30px;
+
+      &:hover {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .navs {
+    padding: $doc-padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    a {
+      width: 63px;
+      height: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      color: $nav-color;
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 20px;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.icon-intro {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #1c1a19;
+
+  .icons {
+    margin-left: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $nav-color;
+
+    svg {
+      color: $nav-color;
+    }
+  }
+
+  .introduction {
+    margin: 50px 150px 80px 50px;
+
+    h1 {
+      color: $text-color;
+      width: 566px;
+      height: 160px;
+      font-family: 'Crete Round', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 82px;
+    }
+
+    strong {
+      width: 566px;
+      height: 24px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 44px;
+      color: $nav-color;
+    }
+
+    p {
+      width: 566px;
+      height: 123px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #f4f5f7;
+    }
+  }
+}
+
+#Portofolio {
+  padding: $doc-padding;
+  background-color: #e5e5e5;
+
+  .recent-t {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      color: #091e42;
+      line-height: 52px;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    hr {
+      width: 70%;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card {
+      box-shadow: 1px -2px 6px 0 #262626;
+      border-radius: 15px;
+      margin-top: 5rem;
+      width: 31%;
+      position: relative;
+
+      &:hover {
+        box-shadow: 4px 0 0 -1px #262626;
+      }
+
+      h3 {
+        position: absolute;
+        top: 3rem;
+        left: 16px;
+        width: 337px;
+        height: 81px;
+        font-size: 32px;
+        font-family: 'Crete Round', serif;
+        font-weight: 400;
+        line-height: 44px;
+        color: $text-color;
+      }
+
+      p {
+        position: absolute;
+        top: 7rem;
+        left: 16px;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        color: #1c1a19;
+      }
+
+      img {
+        width: 100%;
+        height: 60vh;
+        opacity: 0.3;
+        border-radius: 15px;
+
+        &:hover {
+          opacity: 0;
+        }
+      }
+
+      ul {
+        position: absolute;
+        bottom: 5px;
+        list-style: none;
+        display: inline-flex;
+        word-spacing: 1rem;
+        gap: 0.2rem;
+
+        li {
+          border: 1px hidden #262626;
+          padding: 0.2rem;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 20px;
+          color: #1c1a19;
+          background-color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+#About {
+  background-color: #262626;
+  padding: $doc-padding;
+
+  .about-top {
+    .a-h1 {
+      color: $text-color;
+      width: 566px;
+      height: 70px;
+      font-family: 'Crete Round', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 82px;
+    }
+
+    .a-p {
+      width: 566px;
+      height: 148px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #f4f5f7;
+    }
+
+    .a-a {
+      border: 2px solid $text-color;
+      background-color: $text-color;
+      padding: 8px;
+      color: $nav-color;
+      text-decoration: none;
+      line-height: 24px;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    hr {
+      color: $nav-color;
+      width: 100%;
+      margin: 6rem 0;
+      display: block;
+    }
+  }
+
+  .about-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .language,
+    .Frameworks,
+    .Skills {
+      .disk {
+        list-style: square;
+        width: 228px;
+        height: 24px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 20px;
+        color: $nav-color;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          width: 100%;
+          height: 24%;
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 43px;
+          color: #f4f5f7;
+        }
+      }
+    }
+  }
+}
+
+#Contact {
+  padding: $doc-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text-description {
+    width: 455px;
+    height: 256px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  .form {
+    input {
+      border: none;
+      border-bottom: 1px solid #c7c7c7;
+      padding: 0.2rem;
+      font-size: 15px;
+      line-height: 40px;
+    }
+
+    textarea {
+      margin-top: 3rem;
+    }
+  }
+
+  .submit {
+    border: 2px solid $text-color;
+    background-color: $text-color;
+    padding: 8px;
+    color: $nav-color;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262626;
+  color: $nav-color;
+
+  .f-p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f4f5f7;
+  }
+
+  .f-icons {
+    position: absolute;
+    right: 20px;
+  }
+}
