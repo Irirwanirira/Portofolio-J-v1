@@ -1,4 +1,8 @@
 const portofolio = document.querySelector('.portofolio-p');
+const hamburger = document.querySelector('.humburger-menu');
+const Nav = document.querySelector('.navs');
+const NavLinks = document.querySelectorAll('.nav-links');
+
 const div = document.createElement('div');
 div.className = 'container';
 
@@ -74,3 +78,17 @@ const display = projects.map((item) => `
 
 div.innerHTML = display;
 portofolio.append(div);
+
+const toggle = () => {
+  hamburger.classList.toggle('active');
+  Nav.classList.toggle('active');
+};
+
+NavLinks.forEach((element) => {
+  element.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    Nav.classList.remove('active');
+  });
+});
+
+hamburger.addEventListener('click', toggle);
