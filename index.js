@@ -1,5 +1,5 @@
 const portofolio = document.querySelector('.portofolio-p');
-const hamburger = document.querySelector('.humburger-menu');
+const hamburger = document.querySelector('.hamburger-menu');
 const Nav = document.querySelector('.navs');
 const NavLinks = document.querySelectorAll('.nav-links');
 
