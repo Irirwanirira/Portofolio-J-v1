@@ -737,3 +737,12 @@ $mobile-padding: 24px;
     }
   }
 }
+
+@media  only screen and (max-width: 375px){
+  body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
