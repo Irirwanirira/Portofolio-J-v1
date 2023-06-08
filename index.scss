@@ -363,7 +363,7 @@ footer {
 
 $mobile-padding: 24px;
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -449,21 +449,23 @@ $mobile-padding: 24px;
   }
 
   .icon-intro {
-    padding: 124px 24px;
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: #1c1a19;
+    height: calc(100vh - 70px);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
 
     .icons {
-      display: inline-block;
-      margin: -4rem 0 0 -19rem;
+      display: flex;
+      flex-direction: row;
+      order: 2;
+      width: 60%;
+      gap: 1rem;
     }
 
     .introduction {
       h1 {
         color: $text-color;
         width: 327px;
-        height: 124px;
         font-family: 'Crete Round', serif;
         font-style: normal;
         font-weight: 400;
@@ -478,19 +480,18 @@ $mobile-padding: 24px;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
-        line-height: 32px;
         color: $nav-color;
         padding: 24px 0;
       }
 
       p {
-        width: 327px;
-        height: 123px;
+        width: 95%;
+        height: 110px;
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 20px;
+        // line-height: 24px;
         color: #f4f5f7;
       }
     }
@@ -735,14 +736,5 @@ $mobile-padding: 24px;
       position: static;
       line-height: 120px;
     }
-  }
-}
-
-@media  only screen and (max-width: 375px){
-  body {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
 }
