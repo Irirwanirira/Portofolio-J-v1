@@ -368,6 +368,11 @@ $mobile-padding: 24px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+  }
+  body {
+    width: 100%;
+    max-width: 520px;
   }
 
   .navigation {
@@ -452,7 +457,7 @@ $mobile-padding: 24px;
     height: calc(100vh - 70px);
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:repeat(auto-fit, minmax(2 ,1fr));
 
     .icons {
       display: flex;

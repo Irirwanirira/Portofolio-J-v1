@@ -6,6 +6,20 @@ const NavLinks = document.querySelectorAll('.nav-links');
 const div = document.createElement('div');
 div.className = 'container';
 
+const project = async () => {
+try {
+  let res = await fetch("project.json");
+  let data = await res.json();
+  return data
+ 
+  
+} catch (error) {
+  console.log(error)
+  
+}
+}
+
+
 const projects = [
   {
     id: 1,
