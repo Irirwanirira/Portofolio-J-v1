@@ -315,6 +315,7 @@ body {
 }
 
 #Contact {
+  background-color: #575353;
   padding: 140px 60px;
   display: flex;
   flex-direction: column;
@@ -339,6 +340,8 @@ body {
 }
 
 #Contact .form-og input {
+  background-color: #575353;
+  color: #fff;
   border: none;
   width: 100%;
   border-bottom: 1px solid #c7c7c7;
@@ -347,7 +350,17 @@ body {
   line-height: 40px;
 }
 
+#Contact .form-og ::-moz-placeholder {
+  color: #fff;
+}
+
+#Contact .form-og ::placeholder {
+  color: #fff;
+}
+
 #Contact .form-og textarea {
+  background-color: #575353;
+  color: #fff;
   padding: 10px;
   border: 1px solid #c5d8f8;
 }
@@ -626,7 +639,7 @@ footer .footer-icons {
     font-weight: 700;
     font-size: 30px;
     line-height: 45px;
-    color: #262626;
+    color: #172b4d;
   }
 
   #Contact .form-og {
