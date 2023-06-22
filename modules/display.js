@@ -7,7 +7,9 @@ function displayUi(project) {
   project.forEach((item) => {
     display += `
     <div class="card">
-      <img src=${item.image} alt=${item.title}/>
+      <div class="image-div">
+        <img src=${item.image} alt=${item.title}/>
+      </div>
 
       <div class="more-info">
         <h3>${item.title}</h3>

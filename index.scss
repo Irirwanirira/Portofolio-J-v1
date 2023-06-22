@@ -546,21 +546,38 @@ footer {
     .portofolio-p {
       .card {
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        gap: 15px;
         width: 100%;
+        height: 50vh;
 
         &:hover {
           box-shadow: 4px 0 0 -1px #262626;
         }
 
-        img {
+        .image-div {
           width: 50%;
-          height: auto;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
 
-        h3 {
-          color: $text-color;
+        .more-info {
+          width: 50%;
+
+          h3 {
+            color: $text-color;
+          }
+
+          .buttons-link {
+            text-align: left;
+            margin-left: 0;
+          }
         }
+
+
 
         // ul {
         //   position: absolute;
