@@ -26,7 +26,7 @@ function displayUi(project) {
             <a href="${item.liveLink}" >LIVE DEMO</a>
           </button>
           <button class="source">
-            <a href="${item.liveLink}" >SOURCE</a>
+            <a href="${item.source}" >SOURCE</a>
           </button>
         </div>
 
