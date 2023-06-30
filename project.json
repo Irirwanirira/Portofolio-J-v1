@@ -1,16 +1,6 @@
-[
+[ 
     {
       "id": 1,
-      "image": "./image/todo.png",
-      "title": "Todo List",
-      "description": "A user-friendly and responsive app that allows users to easily track his/her daily T0 D0. The user is able to add a new to-do, Edit a current to-do, and Delete a to-do. This app allows users to store all changes in Local storage so user can be able to see his/her stored data anytime.",
-      "languaage": ["HTML", "CSS", "React"],
-      "livelink" :"https://magical-torte-c172f0.netlify.app/",
-      "source":"https://github.com/Irirwanirira/todo-react"
-    },
-  
-    {
-      "id": 2,
       "image": "./image/calculator.png",
       "title": "Math magician",
       "description": "This is a simple app calculator, which helps to operate different basic mathematical operations like addition, multiplication, subtraction, and division.",
@@ -20,7 +10,7 @@
     },
   
     {
-      "id": 3,
+      "id": 2,
       "image": "./image/rockets.png",
       "title": "Space Traveller",
       "description": "This is a react project that renders rocket data as well as mission data from an API onto the UI. This SPA allows users to reserve rockets and join missions, once that is done their data will be rendered onto a profile page showing what has been reserved and/or joined.",
@@ -30,7 +20,7 @@
     },
   
     {
-      "id": 4,
+      "id": 3,
       "image": "./image/transact.png",
       "title": "E-neza TrANZACT",
       "description": "E-neza App is a franchised online mobile application that allows the user to manage his/her budget: they have a list of transactions associated with a category so that the user can see how much money they spend on a particular category.",
@@ -39,7 +29,7 @@
       "source":"https://github.com/Irirwanirira/budget-app"
     },
     {
-      "id": 5,
+      "id": 4,
       "image": "./image/library.png",
       "title": "Library",
       "description": "This is a library app that helps to control the library activities, it helps users to add books of their own and reserve books for reading if they want, all the library operations are saved on the database which is built with ruby on rails, it is simple to use for everyone.",
@@ -48,7 +38,7 @@
       "source":"https://github.com/Irirwanirira/FinalCapstone-Back-End"
     },
     {
-      "id": 6,
+      "id": 5,
       "image": "./image/download.jpeg",
       "title": "My Portofolio",
       "description": "can help you build a product, feature or a website. look through some of my work and experience! if you like what you see and have a project you need codeded, dont hesitate to contact me,",
@@ -56,3 +46,5 @@
       "liveLink": "#"
     }
   ]
+
+  

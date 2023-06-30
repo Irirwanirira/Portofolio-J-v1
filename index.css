@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -18,17 +17,14 @@ body {
   background-color: #3e3c3c;
   height: 70px;
 }
-
 .navigation .logo {
   padding: 24px;
 }
-
 .navigation .logo .l-a {
   color: #fff;
   text-decoration: none;
   font-size: 25px;
 }
-
 .navigation .navs {
   display: none;
   flex-direction: column;
@@ -39,7 +35,7 @@ body {
   padding: 106px 96px 0 28px;
   background-color: rgba(2, 2, 10, 0.8);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   mix-blend-mode: difference;
   width: 40%;
   height: 45rem;
@@ -47,26 +43,21 @@ body {
   left: 60%;
   top: 0;
 }
-
 .navigation .navs a {
   font-size: 20px;
   color: #f4f5f7;
   text-decoration: none;
   line-height: 40px;
 }
-
 .navigation .navs .nav-links:nth-child(4) {
   display: none;
 }
-
 .navigation .navs.active {
   display: flex;
 }
-
 .navigation .hamburger-menu {
   display: block;
 }
-
 .navigation .hamburger-menu .bar {
   display: block;
   width: 25px;
@@ -74,17 +65,14 @@ body {
   margin: 4px auto;
   background-color: #fff;
 }
-
 .navigation .hamburger-menu.active .bar:nth-child(2) {
   opacity: 0;
 }
-
 .navigation .hamburger-menu.active .bar:nth-child(1) {
   color: #fff;
   background-color: #fff;
   transform: translateY(5px) rotate(45deg);
 }
-
 .navigation .hamburger-menu.active .bar:nth-child(3) {
   color: #fff;
   background-color: #fff;
@@ -100,19 +88,16 @@ body {
   justify-content: space-around;
   padding: 50px;
 }
-
 .icon-intro .icons {
   grid-column: 1/3;
   order: 2;
   align-self: center;
   display: flex;
 }
-
 .icon-intro .introduction {
   grid-column: 1/3;
   margin-top: 5rem;
 }
-
 .icon-intro .introduction h1 {
   color: #f55800;
   width: 327px;
@@ -123,7 +108,6 @@ body {
   line-height: 45px;
   margin-bottom: 2rem;
 }
-
 .icon-intro .introduction strong {
   width: 327px;
   height: 27px;
@@ -133,7 +117,6 @@ body {
   font-size: 24px;
   color: #fff;
 }
-
 .icon-intro .introduction p {
   height: 110px;
   font-family: "Inter", sans-serif;
@@ -149,13 +132,11 @@ body {
   padding: 24px;
   background-color: #575353;
 }
-
 #Portofolio .recent-t {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 #Portofolio .recent-t h3 {
   width: 327px;
   height: 83px;
@@ -164,18 +145,15 @@ body {
   font-size: 40px;
   font-weight: 400;
 }
-
 #Portofolio .recent-t hr {
   width: 100%;
 }
-
 #Portofolio .portofolio-p {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   grid-auto-rows: auto;
 }
-
 #Portofolio .portofolio-p .card {
   display: inline-block;
   border: 1px solid blue;
@@ -183,13 +161,11 @@ body {
   padding: 0.5rem;
   border-radius: 0.3rem;
 }
-
 #Portofolio .portofolio-p .card img {
   width: 100%;
   height: 40vh;
   border-radius: 0.3rem;
 }
-
 #Portofolio .portofolio-p .card h3 {
   font-size: 18px;
   font-family: "lato", sans-serif;
@@ -197,7 +173,6 @@ body {
   line-height: 40px;
   color: #fff;
 }
-
 #Portofolio .portofolio-p .card p {
   font-size: 15px;
   font-family: "Inter", sans-serif;
@@ -206,36 +181,30 @@ body {
   line-height: 20px;
   color: rgb(208, 208, 208);
 }
-
 #Portofolio .portofolio-p .card .technology {
   display: none;
 }
-
 #Portofolio .portofolio-p .card .buttons-link {
   text-align: center;
   margin: 1rem;
 }
-
 #Portofolio .portofolio-p .card .buttons-link a {
   text-decoration: none;
   font-size: 12px;
   color: #fff;
 }
-
 #Portofolio .portofolio-p .card .buttons-link button {
   border-radius: 0.2rem;
   border: hidden;
   padding: 0.2rem 0.5rem;
   width: 6rem;
 }
-
 #Portofolio .portofolio-p .card .buttons-link .live a {
   color: blue;
 }
-
 #Portofolio .portofolio-p .card .buttons-link .source {
   background-color: #172b4d;
-  border: 1px solid blue;
+  border: 0.5px solid blue;
   color: #fff;
 }
 
@@ -243,7 +212,6 @@ body {
   background-color: #262626;
   padding: 120px 50px;
 }
-
 #About .about-top .a-h1 {
   color: #f55800;
   width: 327px;
@@ -254,7 +222,6 @@ body {
   font-size: 72px;
   line-height: 50px;
 }
-
 #About .about-top .a-p {
   width: 327px;
   height: 148px;
@@ -264,7 +231,6 @@ body {
   line-height: 24px;
   color: #f4f5f7;
 }
-
 #About .about-top .resume {
   width: 132px;
   height: 24px;
@@ -277,18 +243,15 @@ body {
   font-size: 17px;
   font-weight: 700;
 }
-
 #About .about-top hr {
   width: 100%;
   margin: 8rem 0;
   display: block;
 }
-
 #About .about-bottom {
   display: flex;
   flex-direction: column;
 }
-
 #About .about-bottom .language .disk,
 #About .about-bottom .Frameworks .disk,
 #About .about-bottom .Skills .disk {
@@ -300,13 +263,11 @@ body {
   color: #fff;
   margin: 10px 0;
 }
-
 #About .about-bottom .language ul,
 #About .about-bottom .Frameworks ul,
 #About .about-bottom .Skills ul {
   list-style: none;
 }
-
 #About .about-bottom .language ul li,
 #About .about-bottom .Frameworks ul li,
 #About .about-bottom .Skills ul li {
@@ -327,7 +288,6 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
-
 #Contact .text-description {
   width: 100%;
   font-family: "Inter", sans-serif;
@@ -336,14 +296,12 @@ body {
   line-height: 44px;
   color: #172b4d;
 }
-
 #Contact .form-og {
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
   width: 100%;
 }
-
 #Contact .form-og input {
   background-color: #575353;
   color: #fff;
@@ -354,22 +312,18 @@ body {
   font-size: 15px;
   line-height: 40px;
 }
-
 #Contact .form-og ::-moz-placeholder {
   color: #fff;
 }
-
 #Contact .form-og ::placeholder {
   color: #fff;
 }
-
 #Contact .form-og textarea {
   background-color: #575353;
   color: #fff;
   padding: 10px;
   border: 1px solid #c5d8f8;
 }
-
 #Contact .form-og .submit {
   border: 2px solid #f55800;
   background-color: #f55800;
@@ -386,11 +340,9 @@ footer {
   border-top: 1px solid #091e42;
   background-color: rgba(2, 2, 10, 0.8);
 }
-
 footer .footer-rigth {
   display: none;
 }
-
 footer .footer-icons {
   display: flex;
   gap: 20px;
@@ -405,7 +357,6 @@ footer .footer-icons {
     padding: 0;
     box-sizing: border-box;
   }
-
   .navigation {
     display: flex;
     align-items: center;
@@ -414,28 +365,24 @@ footer .footer-icons {
     width: 100%;
     height: 70px;
   }
-
   .navigation .logo {
     padding: 143px;
   }
-
   .navigation .logo .l-a {
     color: #fff;
     text-decoration: none;
     font-size: 30px;
   }
-
   .navigation .logo .l-a:hover {
     font-size: 20px;
     transform: rotate(20deg);
     transition: 0.5s all;
   }
-
   .navigation .navs {
     padding: 0 50px;
     max-height: 0;
     -webkit-backdrop-filter: unset;
-    backdrop-filter: unset;
+            backdrop-filter: unset;
     position: static;
     background: none;
     mix-blend-mode: normal;
@@ -445,7 +392,6 @@ footer .footer-icons {
     justify-content: space-between;
     gap: 10px;
   }
-
   .navigation .navs a {
     width: 63px;
     height: 20px;
@@ -456,26 +402,21 @@ footer .footer-icons {
     font-size: 0.9rem;
     line-height: 20px;
   }
-
   .navigation .navs a:hover {
     color: #f55800;
   }
-
   .navigation .navs .nav-links:nth-child(4) {
     display: inline-block;
   }
-
   .navigation .hamburger-menu {
     display: none;
   }
-
   .icon-intro {
     display: grid;
     grid-template-columns: repeat(minmax(12, 1fr));
     align-items: center;
     gap: 10px;
   }
-
   .icon-intro .icons {
     grid-column: 2/6;
     display: flex;
@@ -483,11 +424,9 @@ footer .footer-icons {
     order: 0;
     align-self: center;
   }
-
   .icon-intro .introduction {
     grid-column: 6/12;
   }
-
   .icon-intro .introduction h1 {
     color: #f55800;
     width: 566px;
@@ -498,7 +437,6 @@ footer .footer-icons {
     font-size: 72px;
     line-height: 82px;
   }
-
   .icon-intro .introduction strong {
     width: 566px;
     height: 24px;
@@ -509,7 +447,6 @@ footer .footer-icons {
     line-height: 44px;
     color: #fff;
   }
-
   .icon-intro .introduction p {
     width: 566px;
     height: 123px;
@@ -520,29 +457,24 @@ footer .footer-icons {
     line-height: 32px;
     color: #f4f5f7;
   }
-
   #Portofolio {
     padding: 143px;
     background-color: #575353;
   }
-
   #Portofolio .recent-t {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   #Portofolio .recent-t h3 {
     color: #091e42;
     line-height: 52px;
     font-size: 40px;
     font-weight: 400;
   }
-
   #Portofolio .recent-t hr {
     width: 70%;
   }
-
   #Portofolio .portofolio-p .card {
     display: flex;
     justify-content: center;
@@ -550,52 +482,53 @@ footer .footer-icons {
     width: 100%;
     height: 50vh;
   }
-
   #Portofolio .portofolio-p .card:hover {
     box-shadow: 1px 1px 40px 1px;
     transform: translateX(2);
   }
-
   #Portofolio .portofolio-p .card .image-div {
     width: 50%;
   }
-
   #Portofolio .portofolio-p .card .image-div img {
     width: 100%;
     height: 100%;
   }
-
   #Portofolio .portofolio-p .card .more-info {
     width: 50%;
   }
-
   #Portofolio .portofolio-p .card .more-info h3 {
     color: #f55800;
   }
-
   #Portofolio .portofolio-p .card .more-info .buttons-link {
     text-align: left;
     margin-left: 0;
   }
-
+  #Portofolio .portofolio-p .card .more-info .buttons-link button {
+    padding: 10px;
+  }
+  #Portofolio .portofolio-p .card .more-info .buttons-link button.livev:hover {
+    border: 0.5 solid #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+  #Portofolio .portofolio-p .card .more-info .buttons-link button.source:hover {
+    background-color: transparent;
+  }
   #About .resume:hover {
     background-color: transparent;
     border: 0.2px solid #f55800;
   }
-
   #About .about-bottom {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-
   #About .language,
   #About .Frameworks,
   #About .Skills {
     align-self: baseline;
   }
-
   #About .language .disk:hover,
   #About .Frameworks .disk:hover,
   #About .Skills .disk:hover {
@@ -603,7 +536,6 @@ footer .footer-icons {
     transform: rotate(20deg);
     transition: 0.5s all;
   }
-
   #About .language ul li:hover,
   #About .Frameworks ul li:hover,
   #About .Skills ul li:hover {
@@ -612,7 +544,6 @@ footer .footer-icons {
     transition: 0.5s all;
     text-decoration: underline;
   }
-
   #Contact {
     margin: 0;
     padding: 6rem 3rem;
@@ -621,7 +552,6 @@ footer .footer-icons {
     gap: 20px;
     height: 100vh;
   }
-
   #Contact .text-description {
     height: 256px;
     font-family: "Inter", sans-serif;
@@ -630,14 +560,12 @@ footer .footer-icons {
     line-height: 45px;
     color: #172b4d;
   }
-
   #Contact .form-og {
     margin: 0;
     display: flex;
     flex-direction: column;
     width: 55%;
   }
-
   #Contact .form-og input {
     border: none;
     border-bottom: 1px solid #c7c7c7;
@@ -645,11 +573,9 @@ footer .footer-icons {
     font-size: 15px;
     line-height: 40px;
   }
-
   #Contact .form-og textarea {
     margin-top: 3rem;
   }
-
   #Contact .form-og .submit {
     border: 2px solid #f55800;
     background-color: #f55800;
@@ -661,12 +587,10 @@ footer .footer-icons {
     font-weight: 700;
     width: 50%;
   }
-
   #Contact .form-og .submit:hover {
     background-color: transparent;
     border: 0.2px solid #f55800;
   }
-
   footer {
     display: flex;
     align-items: center;
@@ -675,7 +599,6 @@ footer .footer-icons {
     color: #fff;
     height: 10vh;
   }
-
   footer .footer-rigth {
     display: block;
     font-family: "Inter", sans-serif;
@@ -683,8 +606,7 @@ footer .footer-icons {
     font-size: 20px;
     color: #f4f5f7;
   }
-
   footer .footer-icons {
     display: none;
   }
-}
+}/*# sourceMappingURL=index.css.map */

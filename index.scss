@@ -237,7 +237,7 @@ $mobile-padding: 24px;
 
         .source {
           background-color: #172b4d;
-          border: 1px solid blue;
+          border: 0.5px solid blue;
           color: #fff;
         }
       }
@@ -575,6 +575,25 @@ footer {
           .buttons-link {
             text-align: left;
             margin-left: 0;
+
+            button{
+              padding: 10px;
+
+              &.livev:hover{
+                border: 0.5 solid $nav-color;
+                background-color: transparent;
+                color: $nav-color;
+
+
+              }
+  
+              &.source:hover{
+                background-color: transparent;
+
+               
+              }
+            }
+
           }
         }
 
