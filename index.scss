@@ -271,10 +271,10 @@ $mobile-padding: 24px;
       color: #f4f5f7;
     }
 
-    .a-a {
+    .resume {
       width: 132px;
       height: 24px;
-      border: 2px solid $text-color;
+      border: 0.5px solid $text-color;
       background-color: $text-color;
       padding: 8px;
       color: $nav-color;
@@ -552,7 +552,8 @@ footer {
         height: 50vh;
 
         &:hover {
-          box-shadow: 4px 0 0 -1px #262626;
+          box-shadow: 1px 1px 40px 1px;
+          transform: translateX(2);
         }
 
         .image-div {
@@ -577,8 +578,6 @@ footer {
           }
         }
 
-
-
         // ul {
         //   position: absolute;
         //   bottom: 5px;
@@ -602,6 +601,11 @@ footer {
   }
 
   #About {
+    .resume:hover {
+      background-color: transparent;
+      border: 0.2px solid $text-color;
+    }
+
     .about-bottom {
       display: flex;
       flex-direction: row;
@@ -613,6 +617,19 @@ footer {
     .Frameworks,
     .Skills {
       align-self: baseline;
+
+      .disk:hover {
+        font-size: 20px;
+        transform: rotate(20deg);
+        transition: 0.5s all;
+      }
+
+      ul li:hover {
+        font-size: 20px;
+        transform: rotate(20deg);
+        transition: 0.5s all;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -661,6 +678,11 @@ footer {
         font-size: 17px;
         font-weight: 700;
         width: 50%;
+      }
+
+      .submit:hover {
+        background-color: transparent;
+        border: 0.2px solid $text-color;
       }
     }
   }

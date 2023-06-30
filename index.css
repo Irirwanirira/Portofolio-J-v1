@@ -265,10 +265,10 @@ body {
   color: #f4f5f7;
 }
 
-#About .about-top .a-a {
+#About .about-top .resume {
   width: 132px;
   height: 24px;
-  border: 2px solid #f55800;
+  border: 0.5px solid #f55800;
   background-color: #f55800;
   padding: 8px;
   color: #fff;
@@ -552,7 +552,8 @@ footer .footer-icons {
   }
 
   #Portofolio .portofolio-p .card:hover {
-    box-shadow: 4px 0 0 -1px #262626;
+    box-shadow: 1px 1px 40px 1px;
+    transform: translateX(2);
   }
 
   #Portofolio .portofolio-p .card .image-div {
@@ -577,6 +578,11 @@ footer .footer-icons {
     margin-left: 0;
   }
 
+  #About .resume:hover {
+    background-color: transparent;
+    border: 0.2px solid #f55800;
+  }
+
   #About .about-bottom {
     display: flex;
     flex-direction: row;
@@ -588,6 +594,23 @@ footer .footer-icons {
   #About .Frameworks,
   #About .Skills {
     align-self: baseline;
+  }
+
+  #About .language .disk:hover,
+  #About .Frameworks .disk:hover,
+  #About .Skills .disk:hover {
+    font-size: 20px;
+    transform: rotate(20deg);
+    transition: 0.5s all;
+  }
+
+  #About .language ul li:hover,
+  #About .Frameworks ul li:hover,
+  #About .Skills ul li:hover {
+    font-size: 20px;
+    transform: rotate(20deg);
+    transition: 0.5s all;
+    text-decoration: underline;
   }
 
   #Contact {
@@ -637,6 +660,11 @@ footer .footer-icons {
     font-size: 17px;
     font-weight: 700;
     width: 50%;
+  }
+
+  #Contact .form-og .submit:hover {
+    background-color: transparent;
+    border: 0.2px solid #f55800;
   }
 
   footer {
