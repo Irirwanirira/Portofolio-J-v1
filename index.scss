@@ -182,7 +182,7 @@ $mobile-padding: 24px;
 
     .card {
       display: inline-block;
-      border: 1px solid blue;
+      box-shadow: 1px 0 4px 1px;
       margin-top: 1rem;
       padding: 0.5rem;
       border-radius: 0.3rem;
@@ -249,49 +249,57 @@ $mobile-padding: 24px;
   background-color: #262626;
   padding: 120px 50px;
 
-  .about-top {
-    .a-h1 {
-      color: $text-color;
-      width: 327px;
-      height: 79px;
-      font-family: "Crete Round", serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 72px;
-      line-height: 50px;
+  .about-testimoimials {
+    margin-bottom: 8rem;
+
+    .about-top {
+      .a-h1 {
+        color: $text-color;
+        width: 327px;
+        height: 79px;
+        font-family: "Crete Round", serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 50px;
+      }
+
+      .a-p {
+        width: 327px;
+        height: 148px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #f4f5f7;
+      }
+
+      .resume {
+        width: 132px;
+        height: 24px;
+        border: 0.5px solid $text-color;
+        background-color: $text-color;
+        padding: 8px;
+        color: $nav-color;
+        text-decoration: none;
+        line-height: 24px;
+        font-size: 17px;
+        font-weight: 700;
+      }
     }
 
-    .a-p {
-      width: 327px;
-      height: 148px;
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: #f4f5f7;
-    }
-
-    .resume {
-      width: 132px;
-      height: 24px;
-      border: 0.5px solid $text-color;
-      background-color: $text-color;
-      padding: 8px;
-      color: $nav-color;
-      text-decoration: none;
-      line-height: 24px;
-      font-size: 17px;
-      font-weight: 700;
-    }
-
-    hr {
-      width: 100%;
-      margin: 8rem 0;
-      display: block;
+    .testimonials {
+      display: none;
     }
   }
 
+  hr {
+    width: 100%;
+    display: block;
+  }
+
   .about-bottom {
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
 
@@ -576,24 +584,21 @@ footer {
             text-align: left;
             margin-left: 0;
 
-            button{
+            button {
               padding: 10px;
 
-              &.livev:hover{
-                border: 0.5 solid $nav-color;
+              &.live:hover {
+                border: 1px solid $nav-color;
                 background-color: transparent;
                 color: $nav-color;
-
-
+                transition: ease-in-out 800ms;
               }
-  
-              &.source:hover{
-                background-color: transparent;
 
-               
+              &.source:hover {
+                background-color: transparent;
+                transition: ease-in-out 800ms;
               }
             }
-
           }
         }
 
@@ -620,10 +625,53 @@ footer {
   }
 
   #About {
-    .resume:hover {
-      background-color: transparent;
-      border: 0.2px solid $text-color;
+    .about-testimoimials {
+      display: flex;
+      justify-content: space-between;
+      gap: 5rem;
+      // justify-content: space-between;
+
+      .testimonials {
+        display: flex;
+        flex-direction: column;
+
+        .speaker {
+          align-self: center;
+          background-color: $nav-color;
+          border-radius: 50%;
+          height: auto;
+          width: 7rem;
+          margin-bottom: 1.5rem;
+          color: white;
+
+          .speaker-img {
+            text-align: center;
+            border-radius: 50%;
+            height: 6rem;
+            width: 6rem;
+            margin: 5px;
+          }
+        }
+
+        .live-speaker {
+          color: $text-color;
+          font-size: large;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .content {
+          color: $nav-color;
+        }
+      }
+
+      .resume:hover {
+        background-color: transparent;
+        border: 0.2px solid $text-color;
+        transition: ease-out 500ms;
+      }
     }
+
+
 
     .about-bottom {
       display: flex;
@@ -639,14 +687,14 @@ footer {
 
       .disk:hover {
         font-size: 20px;
-        transform: rotate(20deg);
-        transition: 0.5s all;
+        transform: rotate(10deg);
+        transition: ease-out 1s all;
       }
 
       ul li:hover {
         font-size: 20px;
         transform: rotate(20deg);
-        transition: 0.5s all;
+        transition: 0.1s all;
         text-decoration: underline;
       }
     }
@@ -702,6 +750,7 @@ footer {
       .submit:hover {
         background-color: transparent;
         border: 0.2px solid $text-color;
+        transition: ease-out 500ms;
       }
     }
   }
